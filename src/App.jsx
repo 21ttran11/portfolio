@@ -14,14 +14,14 @@ const App = () => {
       img: 'https://i.pinimg.com/736x/11/65/98/116598c0e1216ee32bd8c36e6b8cf91f.jpg',
       id: 'project1',
       title: "Zuk's Delivery",
-      description: '2D adventure video game',
+      description: '2D adventure game',
       details: 'Embark on a journey through perilous dungeons. Battle monsters, find treasure, and solve puzzles to uncover ancient secrets.',
     },
     {
       img: 'https://i.pinimg.com/736x/0f/82/01/0f8201b0a2a280185673e1fc93ecd430.jpg',
       id: 'project2',
-      title: 'Space Explorer',
-      description: 'Explore the universe and discover new planets.',
+      title: 'Wave Rave',
+      description: 'Rhythm game',
       details: 'Pilot your spaceship across the galaxy. Discover alien worlds, mine resources, and survive the unknown.',
     },
     {
@@ -51,6 +51,7 @@ const App = () => {
         </section>
         {selectedProject && (
           <ProjectDetails
+            img = {selectedProject.img}
             title={selectedProject.title}
             description={selectedProject.details}
             onClose={() => setSelectedProject(null)}
