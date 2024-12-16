@@ -4,6 +4,7 @@ import Links from './Links.jsx';
 import ProjectCard from './ProjectCard.jsx';
 import ProjectDetails from './ProjectDetails.jsx';
 import Footer from './Footer.jsx';
+import Skills from './skills.jsx';
 import './index.css';
 
 const App = () => {
@@ -11,25 +12,31 @@ const App = () => {
 
   const projects = [
     {
-      img: 'https://i.pinimg.com/736x/11/65/98/116598c0e1216ee32bd8c36e6b8cf91f.jpg',
+      img: 'https://img.itch.zone/aW1nLzE1OTI1ODI1LnBuZw==/original/KXaELM.png',
       id: 'project1',
       title: "Zuk's Delivery",
       description: '2D adventure game',
-      details: 'Embark on a journey through perilous dungeons. Battle monsters, find treasure, and solve puzzles to uncover ancient secrets.',
+      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
+      technologies: "Unity2D",
+      contributions: "Gameplay"
     },
     {
-      img: 'https://i.pinimg.com/736x/0f/82/01/0f8201b0a2a280185673e1fc93ecd430.jpg',
+      img: 'https://img.itch.zone/aW1hZ2UvMzA5NDc0Ny8xODUwMzY5Ni5wbmc=/794x1000/0hX8%2BN.png',
       id: 'project2',
       title: 'Wave Rave',
       description: 'Rhythm game',
-      details: 'Pilot your spaceship across the galaxy. Discover alien worlds, mine resources, and survive the unknown.',
+      details: 'Dive into the ocean and face enemies in a suspensful musical battle',
+      technologies: "Unity2D",
+      contributions: "Gameplay"
     },
     {
       img: 'https://i.pinimg.com/736x/49/eb/4a/49eb4a6239fefe4e1f5a46c99b1f8086.jpg',
       id: 'project3',
-      title: 'Puzzle Master',
-      description: 'Test your brain with challenging puzzles.',
-      details: 'Challenge yourself with hundreds of mind-bending puzzles. Perfect for anyone who loves a good brain teaser.',
+      title: 'Enviro.Co',
+      description: 'Educational game about saving the environment',
+      details: 'Play through a series of mini-games that teaches you how to save envergy in order to pass he enviro.co inspection.',
+      technologies: "Unity2D",
+      contributions: "Gameplay"
     },
   ];
 
@@ -37,6 +44,7 @@ const App = () => {
     <div>
       <Header />
       <Links />
+      <Skills />
       <main>
         <section className="projects">
           {projects.map((project) => (
@@ -54,6 +62,8 @@ const App = () => {
             img = {selectedProject.img}
             title={selectedProject.title}
             description={selectedProject.details}
+            technologies={selectedProject.technologies}
+            contributions={selectedProject.contributions}
             onClose={() => setSelectedProject(null)}
           />
         )}
