@@ -1,4 +1,3 @@
-open folder in terminal \n
-commands: 
+open folder in terminal -> commands: 
  npm install 
  npm run dev 
