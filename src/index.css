@@ -6,10 +6,6 @@ body, html {
   font-family: 'Inter';
 }
 
-a {
-  text-decoration: none;
-}
-
 #root {
   display: flex;
   flex-direction: column;
@@ -29,25 +25,56 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.floating-box {
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  top: 25px; 
+  right: 25px; 
+  width: 203px; 
+  height: 192px; 
+  background-color: #7CCDFF; 
+  color: black; 
+  display: flex; 
+  border: 2.5px solid #000000;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 16px; 
+  z-index: 1000; 
+}
+.divider {
+  width: 100%; 
+  border: 0;
+  height: 2px;
+  background-color: black; 
+  margin: 5px 0;
+}
+
+.links a{
+  text-decoration: none; 
+  color: #000000; 
+  font-size: 18px;
+  padding: 1em 1em;
+  border-radius: 25px; 
+}
+
+.links a:hover {
+  font-weight: 410;
+}
+
 .header {
   display: flex;
   justify-content: center;
+  padding: 9em 1em;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 80%; /* Box width constraint */
+  justify-content: center;
   max-width: 1011px; /* Prevents stretching beyond this size */
   max-height: 195px;
-}
-
-.more {
-  text-align: right;
-}
-
-.more:hover{
-  font-weight: 400; 
 }
 
 .header-text p {
@@ -56,6 +83,18 @@ footer {
   font-weight: 315;
   text-align: center;
   word-spacing: 0%; 
+}
+
+.more {
+  color:rgb(0, 0, 0);
+  font-size: 25px; 
+  font-weight: 315;
+  margin-left: auto;
+  text-decoration: none; 
+}
+
+.more:hover {
+  font-weight: 410;
 }
 
 .yellow {
@@ -78,35 +117,8 @@ footer {
   padding: 2px;
 }
 
-.links {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin: 20px 0;
-}
-
-.links a {
-  text-decoration: none; 
-  color: #ffffff; 
-  font-size: 18px;
-  padding: 1em 1em;
-  border-radius: 25px; 
-  background-color: #e16969;
-  transition: background-color 0.3s ease; 
-}
-
-.links a:hover {
-  background-color: #ffffff; 
-  color: #d36161; 
-}
 
 
-header {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  padding: 10em 1em;
-}
 
 main {
   padding: 1em;
