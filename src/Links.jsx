@@ -3,7 +3,9 @@ import './index.css'; // Ensure you include your CSS file here
 
 const Links = () => (
   <div className="floating-box">
-    <p> Links </p>
+    <div class="title">
+        <p> Links </p>
+    </div>
     <hr class="divider"/>
     <div class="links">
       <a href="https://github.com" target="_blank">GitHub</a><br />
