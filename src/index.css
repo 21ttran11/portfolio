@@ -118,103 +118,15 @@ footer {
   padding: 2px;
 }
 
-
-
-
 main {
   padding: 1em;
 }
 
 
-/* Project Cards */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-}
-
-.project-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1em;
-  width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-/* Project Details */
-.details {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 2em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
-  max-height: 70%; /* Adjust height relative to the viewport */
-  text-align: center;
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
-}
-
-.details-content {
-  display: flex; /* Enables flexbox layout */
-  gap: 1.5em; /* Space between the two sections */
-  justify-content: center; /* Centers the sections horizontally */
-  align-items: flex-start; /* Aligns items to the top */
-  text-align: left; /* Aligns text to the left for better readability */
-}
-
-.technologies, .contributions {
-  flex: 1; /* Ensures both sections take equal space */
-  min-width: 0; /* Allows flex items to shrink if needed */
-}
-
-.technologies h3, .contributions h3 {
-  margin-bottom: 0.5em; /* Adds spacing below headings */
-}
-.details h2 {
-  margin-top: 0; /* Remove unnecessary top margin for better alignment */
-}
-
-.details::-webkit-scrollbar {
-  width: 8px; /* Customize scrollbar width */
-}
-
-.details::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2); /* Add subtle styling for the scrollbar */
-  border-radius: 4px; /* Rounded corners for the scrollbar */
-}
-
-.details::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4); /* Darker scrollbar on hover */
-}
-
 .hidden {
   display: none;
 }
 
-.details button {
-  background-color: #e16969;
-  color: white;
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 1em;
-}
-
-.details button:hover {
-  background-color: #d36161;
-}
 
 .contact-me {
   margin: 50px auto;
@@ -269,3 +181,7 @@ main {
   background-color: #0056b3;
 }
 
+.contact-me {
+  margin-top: 40px;
+  text-align: center;
+}

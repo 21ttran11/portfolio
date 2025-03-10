@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import Header from './Header.jsx';
 import Links from './Links.jsx';
 import ProjectCard from './ProjectCard.jsx';
-import ProjectDetails from './ProjectDetails.jsx';
 import Footer from './Footer.jsx';
-import Skills from './skills.jsx';
 import './index.css';
+import './tabs.css';
 
 const App = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [activeTab, setActiveTab] = useState('games');
 
   const projects = [
     {
@@ -27,7 +26,7 @@ const App = () => {
       id: 'project2',
       title: 'Wave Rave',
       description: 'Rhythm game',
-      details: 'Dive into the ocean and face enemies in a suspensful musical battle',
+      details: 'Dive into the ocean and face enemies in a suspenseful musical battle',
       technologies: "Unity2D",
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
@@ -37,95 +36,68 @@ const App = () => {
       id: 'project3',
       title: 'EnvironCo',
       description: 'Educational game about saving the environment',
-      details: 'Play through a series of mini-games that teaches you how to save envergy in order to pass he Environoco inspection.',
+      details: 'Play through a series of mini-games that teach you how to save energy in order to pass the EnvironCo inspection.',
       technologies: "Unity2D",
       contributions: "Gameplay"
     },
   ];
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you, ${formData.name}! Your message has been sent.`);
-    // This can be replaced with a backend call later to actually send an email.
-    setFormData({ name: '', email: '', message: '' });
-  };
-
   return (
     <div>
       <Header />
       <Links />
-      <Skills />
-      <main>
-        <section className="projects">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              img= {project.img}
-              title={project.title}
-              description={project.description}
-              onClick={() => setSelectedProject(project)}
-            />
-          ))}
-        </section>
-        {selectedProject && (
-          <ProjectDetails
-            img = {selectedProject.img}
-            title={selectedProject.title}
-            description={selectedProject.details}
-            technologies={selectedProject.technologies}
-            contributions={selectedProject.contributions}
-            itchlink={selectedProject.itchlink}
-            gitlink={selectedProject.gitlink}
-            onClose={() => setSelectedProject(null)}
-          />
+
+      {/* Tabs */}
+      <div className="tabs-container">
+        <div className="tabs">
+          <button className={`tab-button ${activeTab === 'games' ? 'active' : ''}`} onClick={() => setActiveTab('games')}>
+            games
+          </button>
+          <button className={`tab-button ${activeTab === 'projects' ? 'active' : ''}`} onClick={() => setActiveTab('projects')}>
+            projects
+          </button>
+          <button className={`tab-button ${activeTab === 'resume' ? 'active' : ''}`} onClick={() => setActiveTab('resume')}>
+            resume
+          </button>
+        </div>
+      </div>
+
+      {/* Tab Content */}
+      <main className={`tab-content ${activeTab}`}>
+        {activeTab === 'games' && (
+          <section className="projects">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                img={project.img}
+                title={project.title}
+                description={project.details}
+                technologies={project.technologies}
+                contributions={project.contributions}
+                itchlink={project.itchlink}
+                gitlink={project.gitlink}
+              />
+            ))}
+          </section>
         )}
-        <section className="contact-me">
-          <h2>Contact Me</h2>
-          <form onSubmit={handleSubmit} className="contact-form">
-            <label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your name"
-                required
-              />
-            </label>
-            <label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Your email"
-                required
-              />
-            </label>
-            <label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Your message"
-                required
-              />
-            </label>
-            <button type="submit">Send</button>
-          </form>
-        </section>
+
+        {activeTab === 'projects' && (
+          <section>
+            <h2>Projects</h2>
+            <p>Details about other projects will go here.</p>
+          </section>
+        )}
+
+        {activeTab === 'resume' && (
+          <section className="tab-content resume">
+            <a href="Resume.pdf" download="Resume.pdf">
+              <button>Download Resume</button>
+            </a>
+            <img src="src/Resume.jpg" alt="Resume Display" width="800" height="auto"></img>
+          </section>
+        )}
       </main>
+
       <Footer />
     </div>
   );

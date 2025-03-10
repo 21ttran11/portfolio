@@ -1,0 +1,43 @@
+.tabs-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+  
+  .tabs {
+    display: flex;
+  }
+  
+  .tab-button {
+    padding: 15px 32px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px 18px 0 0; 
+    color: black;
+    margin: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .tab-button:nth-child(1) { background-color: #91E88D; } /* Games */
+  .tab-button:nth-child(2) { background-color: #FFF67C; } /* Projects */
+  .tab-button:nth-child(3) { background-color: #FF7C7C; } /* Resume */
+  
+  .tab-content {
+    padding: 20px;
+    min-height: 300px;
+    transition: background-color 0.3s ease;
+    margin-top: -5px;
+    position: relative;
+  }
+  
+  .tab-content.games { background-color: #91E88D; color: black; }
+  .tab-content.projects { background-color: #FFF67C; color: black; }
+  .tab-content.resume { 
+    display:flex;
+    flex-direction: column;
+    background-color: #FF7C7C; 
+    color: black; 
+}
+  
