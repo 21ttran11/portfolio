@@ -11,18 +11,25 @@ const App = () => {
 
   const projects = [
     {
-      img: 'https://img.itch.zone/aW1nLzE1OTI1ODI1LnBuZw==/original/KXaELM.png',
+      images: [
+        'src/assets/Zuk/SpeechBubble.gif',
+        'src/assets/Zuk/SpeechBubble.gif',
+        'src/assets/Zuk/SpeechBubble.gif'
+      ],
       id: 'project1',
       title: "Zuk's Delivery",
       description: '2D adventure game',
-      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
+      details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: "Unity2D",
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
-      gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
     {
-      img: 'https://img.itch.zone/aW1hZ2UvMzA5NDc0Ny8xODUwMzY5Ni5wbmc=/794x1000/0hX8%2BN.png',
+      images: [
+        'https://img.itch.zone/aW1hZ2UvMzA5NDc0Ny8xODUwMzY5Ni5wbmc=/794x1000/0hX8%2BN.png',
+        'https://media.giphy.com/media/example3.gif',
+        'https://media.giphy.com/media/example4.gif'
+      ],
       id: 'project2',
       title: 'Wave Rave',
       description: 'Rhythm game',
@@ -31,23 +38,14 @@ const App = () => {
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
       gitlink: 'https://github.com/21ttran11/RhythmGame'
-    },
-    {
-      id: 'project3',
-      title: 'EnvironCo',
-      description: 'Educational game about saving the environment',
-      details: 'Play through a series of mini-games that teach you how to save energy in order to pass the EnvironCo inspection.',
-      technologies: "Unity2D",
-      contributions: "Gameplay"
-    },
+    }
   ];
 
   return (
     <div>
       <Header />
-      <Links />
       <div className="skills">
-        <embed src="src/UML.svg" width="auto" height="auto"
+        <embed src="src/assets/UML.svg" width="auto" height="auto"
         type="image/svg+xml"
         pluginspage="http://www.adobe.com/svg/viewer/install/" /> 
       </div>
@@ -73,7 +71,7 @@ const App = () => {
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
-                img={project.img}
+                images={project.images} 
                 title={project.title}
                 description={project.details}
                 technologies={project.technologies}
@@ -90,7 +88,7 @@ const App = () => {
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
-                img={project.img}
+                images={project.images}
                 title={project.title}
                 description={project.details}
                 technologies={project.technologies}
@@ -107,7 +105,7 @@ const App = () => {
             <a href="Resume.pdf" download="Resume.pdf">
               <button>Download Resume</button>
             </a>
-            <img src="src/Resume.jpg" alt="Resume Display" width="800" height="auto"></img>
+            <img src="src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto"></img>
           </section>
         )}
       </main>
