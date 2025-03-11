@@ -18,6 +18,11 @@ main {
   box-sizing: border-box;
 }
 
+.skills {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
 
 footer {
   text-align: center;
@@ -67,6 +72,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 9em 1em;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .header-container {

@@ -46,7 +46,11 @@ const App = () => {
     <div>
       <Header />
       <Links />
-
+      <div className="skills">
+        <embed src="src/UML.svg" width="auto" height="auto"
+        type="image/svg+xml"
+        pluginspage="http://www.adobe.com/svg/viewer/install/" /> 
+      </div>
       {/* Tabs */}
       <div className="tabs-container">
         <div className="tabs">
@@ -65,7 +69,7 @@ const App = () => {
       {/* Tab Content */}
       <main className={`tab-content ${activeTab}`}>
         {activeTab === 'games' && (
-          <section className="projects">
+          <section className="games">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -82,9 +86,19 @@ const App = () => {
         )}
 
         {activeTab === 'projects' && (
-          <section>
-            <h2>Projects</h2>
-            <p>Details about other projects will go here.</p>
+            <section className="projects">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                img={project.img}
+                title={project.title}
+                description={project.details}
+                technologies={project.technologies}
+                contributions={project.contributions}
+                itchlink={project.itchlink}
+                gitlink={project.gitlink}
+              />
+            ))}
           </section>
         )}
 
