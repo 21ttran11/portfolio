@@ -11,31 +11,32 @@ const App = () => {
 
   const projects = [
     {
+      role: "Team Lead & Programmer",
       images: [
-        'src/assets/Zuk/SpeechBubble.gif',
-        'src/assets/Zuk/SpeechBubble.gif',
         'src/assets/Zuk/SpeechBubble.gif'
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
+      video: "src/assets/Zuk/ZukVideo.mp4",
       description: '2D adventure game',
       details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
-      technologies: "Unity2D",
-      contributions: "Gameplay",
+      technologies: 'src/assets/Logos/Unity.svg',
+      contributions: "This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
       gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
     {
+      role: "Team Lead & Programmer",
       images: [
         'https://img.itch.zone/aW1hZ2UvMzA5NDc0Ny8xODUwMzY5Ni5wbmc=/794x1000/0hX8%2BN.png',
         'https://media.giphy.com/media/example3.gif',
         'https://media.giphy.com/media/example4.gif'
       ],
       id: 'project2',
-      title: 'Wave Rave',
+      title: 'Wave Rave 🫧⋆｡˚🌊',
       description: 'Rhythm game',
-      details: 'Dive into the ocean and face enemies in a suspenseful musical battle',
-      technologies: "Unity2D",
+      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
+      technologies:'src/assets/Logos/Unity.svg',
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
       gitlink: 'https://github.com/21ttran11/RhythmGame'
@@ -72,8 +73,10 @@ const App = () => {
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
+                role={project.role}
                 images={project.images} 
                 title={project.title}
+                video={project.video}
                 description={project.details}
                 technologies={project.technologies}
                 contributions={project.contributions}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'; // Ensure you include your CSS file here
+import './index.css'; 
 
 const Links = () => (
   <div className="floating-box">
