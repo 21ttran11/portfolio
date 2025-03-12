@@ -19,7 +19,7 @@ const App = () => {
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
       description: '2D adventure game',
-      details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
+      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       technologies: "Unity2D",
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
