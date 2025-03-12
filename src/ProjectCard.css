@@ -14,8 +14,8 @@
 }
 
 .project-card img {
-  width: 674px;
-  height: 400px;
+  width: 960px;
+  height: autopx;
   object-fit: cover;
 }
 
@@ -53,6 +53,7 @@
 
 .details-content {
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .details-content h3 {

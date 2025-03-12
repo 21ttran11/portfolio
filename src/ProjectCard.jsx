@@ -21,8 +21,8 @@ const ProjectCard = ({ images, title, description, technologies, contributions, 
       </div>
       <div className="project-card-details">
         <h2>{title}</h2>
-        <p>{description}</p>
         <div className="details-content">
+          <p>{description}</p>
           <div className="technologies">
             <h3>Technologies</h3>
             <p>{technologies}</p>

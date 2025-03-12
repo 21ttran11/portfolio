@@ -17,12 +17,13 @@ const App = () => {
         'src/assets/Zuk/SpeechBubble.gif'
       ],
       id: 'project1',
-      title: "Zuk's Delivery",
+      title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
       description: '2D adventure game',
       details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: "Unity2D",
       contributions: "Gameplay",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
+      gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
     {
       images: [
