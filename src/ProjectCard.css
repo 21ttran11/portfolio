@@ -12,12 +12,14 @@
 }
 
 .video-description{
-  max-width: 600px;
+  width: 600px;
   padding-right: 50px;
   line-height: 32px;
 }
 
 .video video{
+  display: flex;
+  justify-content: left;
   width: 700px;
   height: auto;
 }
@@ -25,16 +27,12 @@
 .project-card {
   display: flex;
   width: 100%;
-  justify-content: left;
   padding: 50px 0px;
 }
 
 .project-card-image {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   font-size: 17px;
-  align-items: center;
   position: relative;
 }
 
@@ -44,31 +42,34 @@
   object-fit: cover;
 }
 
-.nav-button {
-  position: absolute;
-  background: rgba(190, 190, 190, 0.3); 
-  color:rgba(255, 255, 255, 0.6);
-  border: none;
-  font-size: 24px;
-  padding: 5px 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  border-radius: 50%;
+.image-caption {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.nav-button.left {
-  left: 0px;
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
-.nav-button.right {
-  right: 0px;
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.nav-button:hover {
-  background: rgba(255, 255, 255, 0.6);
+.dot.active {
+  background-color: #fff;
 }
 
 .project-card-details {
@@ -86,16 +87,24 @@
   margin-bottom: 5px;
 }
 
-.links {
-  margin-top: 10px;
-}
-
 .links a {
-  font-size: 20px;
+  font-size: 16px;
   color: #515151;
   text-decoration: none;
 }
 
 .links a:hover {
   font-weight: bold;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.tech-logo {
+  height: 100px;
+  width: auto;
+  max-width: 100px; 
 }

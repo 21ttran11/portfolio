@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
-import Links from './Links.jsx';
 import ProjectCard from './ProjectCard.jsx';
 import Footer from './Footer.jsx';
 import './index.css';
@@ -13,31 +12,39 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        'src/assets/Zuk/SpeechBubble.gif'
+        { src: 'src/assets/Zuk/SpeechBubble.gif', caption: 'Character Speech Bubble User Interface' },
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Example'}
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
       video: "src/assets/Zuk/ZukVideo.mp4",
-      description: '2D adventure game',
-      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
-      technologies: 'src/assets/Logos/Unity.svg',
-      contributions: "This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!",
+      description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
+      description2: '2D single player adventure platformer with heavy story and narrative elements.',
+      details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
+      technologies: [
+        'src/assets/Logos/Unity.svg',
+        'src/assets/Logos/YarnSpinner.svg'
+      ],
+      contributions: "Implemented gameplay mechanics, managed team workflow...",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
       gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
     {
       role: "Team Lead & Programmer",
       images: [
-        'https://img.itch.zone/aW1hZ2UvMzA5NDc0Ny8xODUwMzY5Ni5wbmc=/794x1000/0hX8%2BN.png',
-        'https://media.giphy.com/media/example3.gif',
-        'https://media.giphy.com/media/example4.gif'
+        { src: 'src/assets/Zuk/SpeechBubble.gif', caption: 'Speech Bubble UI' },
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example'}
       ],
       id: 'project2',
       title: 'Wave Rave 🫧⋆｡˚🌊',
-      description: 'Rhythm game',
-      details: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
-      technologies:'src/assets/Logos/Unity.svg',
-      contributions: "Gameplay",
+      description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles. Currently offers a lobster versus shark face-off.',
+      description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
+      details: 'A rhythm-based game where players sync their actions to beats...',
+      technologies: [
+        'src/assets/Logos/Unity.svg',
+        'src/assets/Logos/FMOD.svg'
+      ],
+      contributions: "Created beat syncing system using FMOD and Unity...",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
       gitlink: 'https://github.com/21ttran11/RhythmGame'
     }
@@ -47,10 +54,9 @@ const App = () => {
     <div>
       <Header />
       <div className="skills">
-        <embed src="src/assets/UML.svg" width="auto" height="auto"
-        type="image/svg+xml"
-        pluginspage="http://www.adobe.com/svg/viewer/install/" /> 
+        <img src="src/assets/UML.svg" alt="UML Diagram" className="skills-img" />
       </div>
+
       {/* Tabs */}
       <div className="tabs-container">
         <div className="tabs">
@@ -71,35 +77,15 @@ const App = () => {
         {activeTab === 'games' && (
           <section className="games">
             {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                role={project.role}
-                images={project.images} 
-                title={project.title}
-                video={project.video}
-                description={project.details}
-                technologies={project.technologies}
-                contributions={project.contributions}
-                itchlink={project.itchlink}
-                gitlink={project.gitlink}
-              />
+              <ProjectCard key={project.id} {...project} />
             ))}
           </section>
         )}
 
         {activeTab === 'projects' && (
-            <section className="projects">
+          <section className="projects">
             {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                images={project.images}
-                title={project.title}
-                description={project.details}
-                technologies={project.technologies}
-                contributions={project.contributions}
-                itchlink={project.itchlink}
-                gitlink={project.gitlink}
-              />
+              <ProjectCard key={project.id} {...project} />
             ))}
           </section>
         )}
@@ -109,7 +95,7 @@ const App = () => {
             <a href="Resume.pdf" download="Resume.pdf">
               <button>Download Resume</button>
             </a>
-            <img src="src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto"></img>
+            <img src="src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto" />
           </section>
         )}
       </main>

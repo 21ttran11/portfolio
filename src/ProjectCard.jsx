@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({ role, images, title, video, description, technologies, contributions, itchlink, gitlink }) => {
+const ProjectCard = ({ role, images, title, video, description, description2, technologies, contributions, itchlink, gitlink }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -14,47 +14,62 @@ const ProjectCard = ({ role, images, title, video, description, technologies, co
 
   return (
     <div className="project-widget">
+      {/* Video & Description Section */}
       <div className="video-section">
         <div className="video-description">
-          <h2>{title}</h2>
+          <h1>{title}</h1>
           <div className="links">
             {itchlink && <a href={itchlink} target="_blank" rel="noopener noreferrer">Itch.io</a>}
             {gitlink && <a href={gitlink} target="_blank" rel="noopener noreferrer">GitHub</a>}
-        </div>
+          </div>
           <p>{description}</p>
+          <p>{description2}</p>
         </div>
         <div className="video">
           <video controls>
-            <source src={video} type="video/mp4"/>
+            <source src={video} type="video/mp4" />
           </video>
         </div>
       </div>
+
+      {/* Image Carousel */}
       <div className="project-card">
-      <div className="project-card-image">
-        <button className="nav-button left" onClick={prevImage}>&#8592;</button>
-        <img src={images[currentImageIndex]} alt={`${title} thumbnail`} />
-        <p>caption</p>
-        <button className="nav-button right" onClick={nextImage}>&#8594;</button>
-      </div>
-      <div className="project-card-details">
-        <div className="details-content">
-        <div className="contributions">
-            <h3>{role}</h3>
-            <p>{contributions}</p>
-        </div>          
-          <div className="technologies">
-            <h3>Technologies</h3>
-            <div className="logos">
-              <embed src={technologies} width="auto" height="100"
-              type="image/svg+xml"
-              pluginspage="http://www.adobe.com/svg/viewer/install/" /> 
+        <div className="project-card-image">
+          <div className="image-container">
+            <img src={images[currentImageIndex].src} alt={`${title} thumbnail`} />
+            <p className="image-caption">{images[currentImageIndex].caption}</p>
+            <div className="carousel-dots">
+              {images.map((_, index) => (
+                <div
+                  key={index}
+                  className={`dot ${index === currentImageIndex ? "active" : ""}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                ></div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Role, Contributions & Technologies */}
+        <div className="project-card-details">
+          <div className="details-content">
+            <div className="contributions">
+              <h3>{role}</h3>
+              <p>{contributions}</p>
+            </div>
+
+            <div className="technologies">
+              <h3>Technologies</h3>
+              <div className="logos">
+                {technologies.map((tech, index) => (
+                  <img key={index} src={tech} alt="Technology logo" className="tech-logo"/>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-
   );
 };
 
