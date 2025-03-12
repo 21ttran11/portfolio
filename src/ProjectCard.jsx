@@ -17,6 +17,7 @@ const ProjectCard = ({ images, title, description, technologies, contributions, 
       <div className="project-card-image">
         <button className="nav-button left" onClick={prevImage}>&#8592;</button>
         <img src={images[currentImageIndex]} alt={`${title} thumbnail`} />
+        <p>caption</p>
         <button className="nav-button right" onClick={nextImage}>&#8594;</button>
       </div>
       <div className="project-card-details">
