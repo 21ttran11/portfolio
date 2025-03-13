@@ -12,7 +12,7 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: '/src/assets/Zuk/SpeechBubble.gif', caption: 'Character Speech Bubble User Interface' },
+        { src: './src/assets/Zuk/SpeechBubble.gif', caption: 'Character Speech Bubble User Interface' },
         { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Example'}
       ],
       id: 'project1',
