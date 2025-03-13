@@ -12,18 +12,18 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'src/assets/Zuk/SpeechBubble.gif', caption: 'Character Speech Bubble User Interface' },
+        { src: '/src/assets/Zuk/SpeechBubble.gif', caption: 'Character Speech Bubble User Interface' },
         { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Example'}
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
-      video: "src/assets/Zuk/ZukVideo.mp4",
+      video: "./src/assets/Zuk/ZukVideo.mp4",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       description2: '2D single player adventure platformer with heavy story and narrative elements.',
       details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: [
-        'src/assets/Logos/Unity.svg',
-        'src/assets/Logos/YarnSpinner.svg'
+        './src/assets/Logos/Unity.svg',
+        './src/assets/Logos/YarnSpinner.svg'
       ],
       contributions: "Implemented gameplay mechanics, managed team workflow...",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
@@ -32,7 +32,7 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'src/assets/Zuk/SpeechBubble.gif', caption: 'Speech Bubble UI' },
+        { src: './src/assets/Zuk/SpeechBubble.gif', caption: 'Speech Bubble UI' },
         { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example'}
       ],
       id: 'project2',
@@ -41,8 +41,8 @@ const App = () => {
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       details: 'A rhythm-based game where players sync their actions to beats...',
       technologies: [
-        'src/assets/Logos/Unity.svg',
-        'src/assets/Logos/FMOD.svg'
+        './src/assets/Logos/Unity.svg',
+        './src/assets/Logos/FMOD.svg'
       ],
       contributions: "Created beat syncing system using FMOD and Unity...",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
@@ -54,7 +54,7 @@ const App = () => {
     <div>
       <Header />
       <div className="skills">
-        <img src="src/assets/UML.svg" alt="UML Diagram" className="skills-img" />
+        <img src="./src/assets/UML.svg" alt="UML Diagram" className="skills-img" />
       </div>
 
       {/* Tabs */}
