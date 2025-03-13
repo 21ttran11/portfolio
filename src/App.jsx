@@ -95,7 +95,7 @@ const App = () => {
             <a href="Resume.pdf" download="Resume.pdf">
               <button>Download Resume</button>
             </a>
-            <img src="src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto" />
+            <img src="./src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto" />
           </section>
         )}
       </main>
