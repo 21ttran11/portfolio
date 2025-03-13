@@ -99,7 +99,6 @@ const App = () => {
           </section>
         )}
       </main>
-
       <Footer />
     </div>
   );
