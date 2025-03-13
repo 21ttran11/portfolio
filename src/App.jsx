@@ -17,13 +17,13 @@ const App = () => {
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
-      video: "./src/assets/Zuk/ZukVideo.mp4",
+      video: "./assets/Zuk/ZukVideo.mp4",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       description2: '2D single player adventure platformer with heavy story and narrative elements.',
       details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: [
-        './src/assets/Logos/Unity.svg',
-        './src/assets/Logos/YarnSpinner.svg'
+        './assets/Logos/Unity.svg',
+        './assets/Logos/YarnSpinner.svg'
       ],
       contributions: "Implemented gameplay mechanics, managed team workflow...",
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
@@ -41,8 +41,8 @@ const App = () => {
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       details: 'A rhythm-based game where players sync their actions to beats...',
       technologies: [
-        './src/assets/Logos/Unity.svg',
-        './src/assets/Logos/FMOD.svg'
+        './assets/Logos/Unity.svg',
+        './assets/Logos/FMOD.svg'
       ],
       contributions: "Created beat syncing system using FMOD and Unity...",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
@@ -54,7 +54,7 @@ const App = () => {
     <div>
       <Header />
       <div className="skills">
-        <img src="./src/assets/UML.svg" alt="UML Diagram" className="skills-img" />
+        <img src="./assets/UML.svg" alt="UML Diagram" className="skills-img" />
       </div>
 
       {/* Tabs */}
@@ -95,7 +95,7 @@ const App = () => {
             <a href="Resume.pdf" download="Resume.pdf">
               <button>Download Resume</button>
             </a>
-            <img src="./src/assets/Resume.jpg" alt="Resume Display" width="800" height="auto" />
+            <img src="./assets/Resume.jpg" alt="Resume Display" width="800" height="auto" />
           </section>
         )}
       </main>
