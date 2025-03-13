@@ -12,7 +12,8 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example'}
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example'},
+        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example'}
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
@@ -31,7 +32,7 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: './src/assets/Zuk/SpeechBubble.gif', caption: 'Speech Bubble UI' },
+        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'Speech Bubble UI' },
         { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example'}
       ],
       id: 'project2',
