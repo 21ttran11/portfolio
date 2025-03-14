@@ -15,7 +15,7 @@ const ContactMe = () => {
 
   return (
     <div className="contact-me">
-      <h3><span className = 'red'>Contact Me ↓</span></h3>
+      <h3><span className = 'red'>Contact Me ↓: academic21ttran11@gmail.com</span></h3>
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
         <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
