@@ -22,7 +22,7 @@ const App = () => {
       description2: '2D single player adventure platformer with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/CSharp.svg',
+        './assets/Logos/csharp.svg',
         './assets/Logos/YarnSpinner.svg'
       ],
       contributions: "Implemented gameplay mechanics, managed team workflow...",
@@ -41,7 +41,7 @@ const App = () => {
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/CSharp.svg',
+        './assets/Logos/csharp.svg',
         './assets/Logos/FMOD.svg',
       ],
       contributions: "Created beat syncing system using FMOD and Unity...",
