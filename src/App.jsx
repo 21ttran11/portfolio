@@ -12,8 +12,9 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example 1'},
-        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example 2'}
+        { src: 'https://i.redd.it/szwqxgz7ps011.gif', caption: 'Dynamic scene actions/interactables'},
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Custom speech bubble dialogue UI'},
+        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'Custom speech bubble dialogue options UI'}
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
@@ -32,8 +33,8 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example 1' },
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example 2'}
+        { src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/extras/D3OK.gif?t=1667468479', caption: 'Music-synced beat spawning and hit detection' },
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Perspective change cut-scene'}
       ],
       id: 'project2',
       title: 'Wave Rave 🫧⋆｡˚🌊',
@@ -54,8 +55,8 @@ const App = () => {
     {
       role: "Artist & Writer",
       images: [
-        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example 1' },
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example 2'}
+        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'Title screen & animation' },
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Cooking ramen kitchen scene'}
       ],
       id: 'project1',
       title: 'Savor',
@@ -66,8 +67,7 @@ const App = () => {
         './assets/Logos/FMOD.svg',
       ],
       contributions: "Drew stuff",
-      itchlink: 'https://pomjellies.itch.io/wave-rave',
-      gitlink: 'https://github.com/21ttran11/RhythmGame'     
+      itchlink: 'https://macdudedude.itch.io/savor',   
     }
   ]
 

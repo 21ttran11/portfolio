@@ -37,8 +37,14 @@
 }
 
 .project-card img {
+  /*width: 700px;
+  height: auto;*/
+  object-fit: cover;
+}
+
+.thumbnail {
   width: 700px;
-  height: auto;
+  height: 394px;
   object-fit: cover;
 }
 

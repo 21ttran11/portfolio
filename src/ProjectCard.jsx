@@ -36,7 +36,7 @@ const ProjectCard = ({ role, images, title, video, description, description2, te
       <div className="project-card">
         <div className="project-card-image">
           <div className="image-container">
-            <img src={images[currentImageIndex].src} alt={`${title} thumbnail`} />
+            <img className = "thumbnail" src={images[currentImageIndex].src} alt={`${title} thumbnail`} />
             <p className="image-caption">{images[currentImageIndex].caption}</p>
             <div className="carousel-dots">
               {images.map((_, index) => (
