@@ -23,6 +23,7 @@ const App = () => {
       details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: [
         './assets/Logos/Unity.svg',
+        './assets/Logos/csharp.svg',
         './assets/Logos/YarnSpinner.svg'
       ],
       contributions: "Implemented gameplay mechanics, managed team workflow...",
@@ -37,11 +38,12 @@ const App = () => {
       ],
       id: 'project2',
       title: 'Wave Rave 🫧⋆｡˚🌊',
-      description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles. Currently offers a lobster versus shark face-off.',
+      description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles with charming storylines. Currently offers a lobster versus shark face-off.',
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       details: 'A rhythm-based game where players sync their actions to beats...',
       technologies: [
         './assets/Logos/Unity.svg',
+        './assets/Logos/csharp.svg',
         './assets/Logos/FMOD.svg'
       ],
       contributions: "Created beat syncing system using FMOD and Unity...",
