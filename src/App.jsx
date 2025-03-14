@@ -20,7 +20,6 @@ const App = () => {
       video: "./assets/Zuk/ZukVideo.mp4",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       description2: '2D single player adventure platformer with heavy story and narrative elements.',
-      details: 'This summer, Zuk has picked up a part-time job as a delivery driver...',
       technologies: [
         './assets/Logos/Unity.svg',
         './assets/Logos/csharp.svg',
@@ -40,7 +39,6 @@ const App = () => {
       title: 'Wave Rave 🫧⋆｡˚🌊',
       description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles with charming storylines. Currently offers a lobster versus shark face-off.',
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
-      details: 'A rhythm-based game where players sync their actions to beats...',
       technologies: [
         './assets/Logos/Unity.svg',
         './assets/Logos/csharp.svg',
@@ -54,7 +52,7 @@ const App = () => {
 
   const otherProjects = [
     {
-      role: "Artist",
+      role: "Artist & Writer",
       images: [
         { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example 1' },
         { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example 2'}
@@ -62,8 +60,7 @@ const App = () => {
       id: 'project1',
       title: 'Savor',
       description: '',
-      description2: 'Developed as a submission to the Unlikely Collaborators Game Jam with the theme "Perception Box". A point and click puzzle game with heavy story and narrative elements.',
-      details: 'A rhythm-based game where players sync their actions to beats...',
+      description2: 'Developed in 12 days as a submission to the Unlikely Collaborators Game Jam with the theme "Perception Box". A point and click puzzle game with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
         './assets/Logos/csharp.svg',
@@ -89,10 +86,10 @@ const App = () => {
             games
           </button>
           <button className={`tab-button ${activeTab === 'projects' ? 'active' : ''}`} onClick={() => setActiveTab('projects')}>
-            projects
+            +projects
           </button>
           <button className={`tab-button ${activeTab === 'resume' ? 'active' : ''}`} onClick={() => setActiveTab('resume')}>
-            resume
+            resume↓
           </button>
         </div>
       </div>
