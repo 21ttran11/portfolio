@@ -52,6 +52,29 @@ const App = () => {
     }
   ];
 
+  const otherProjects = [
+    {
+      role: "Artist",
+      images: [
+        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'example 1' },
+        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'example 2'}
+      ],
+      id: 'project1',
+      title: 'Savor',
+      description: '',
+      description2: 'Developed as a submission to the Unlikely Collaborators Game Jam with the theme "Perception Box". A point and click puzzle game with heavy story and narrative elements.',
+      details: 'A rhythm-based game where players sync their actions to beats...',
+      technologies: [
+        './assets/Logos/Unity.svg',
+        './assets/Logos/csharp.svg',
+        './assets/Logos/FMOD.svg'
+      ],
+      contributions: "Drew stuff",
+      itchlink: 'https://pomjellies.itch.io/wave-rave',
+      gitlink: 'https://github.com/21ttran11/RhythmGame'     
+    }
+  ]
+
   return (
     <div>
       <Header />
@@ -86,7 +109,7 @@ const App = () => {
 
         {activeTab === 'projects' && (
           <section className="projects">
-            {projects.map((project) => (
+            {otherProjects.map((project) => (
               <ProjectCard key={project.id} {...project} />
             ))}
           </section>
