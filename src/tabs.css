@@ -38,7 +38,9 @@
   .tab-content.resume { 
     display:flex;
     flex-direction: column;
+    align-items: center;
     background-color: #FF7C7C; 
     color: black; 
-}
-  
+    padding-inline: 40px;
+    gap: 40px;
+  }
