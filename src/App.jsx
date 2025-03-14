@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
 import ProjectCard from './ProjectCard.jsx';
-import Footer from './Footer.jsx';
+import ContactMe from './ContactMe.jsx';
 import './index.css';
 import './tabs.css';
 
@@ -20,13 +20,13 @@ const App = () => {
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
       video: "./assets/Zuk/ZukVideo.mp4",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
-      description2: '2D single player adventure platformer with heavy story and narrative elements.',
+      description2: 'A 2D single player adventure platformer with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
         './assets/Logos/csharp.svg',
         './assets/Logos/YarnSpinner.svg'
       ],
-      contributions: "Implemented gameplay mechanics, managed team workflow...",
+      contributions: <p><span className = 'yellow' style={{ fontWeight: '550' }}>Dialogue Implementation:</span> Implemented YarnSpinner for dyanmic and branching dialogue. Created custom speech bubble views for displaying dialogue and options.</p>,
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
       gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
@@ -66,7 +66,7 @@ const App = () => {
         './assets/Logos/Unity.svg',
         './assets/Logos/FMOD.svg',
       ],
-      contributions: "Drew stuff",
+      contributions: <p><span className = 'blue' style={{ fontWeight: '550' }}>Art & Design:</span> Designed and created game assets including kitchen backgrounds, tool and ingredient sprites, and title-screen.</p>,
       itchlink: 'https://macdudedude.itch.io/savor',   
     }
   ]
@@ -120,7 +120,7 @@ const App = () => {
           </section>
         )}
       </main>
-      <Footer />
+      <ContactMe />
     </div>
   );
 };

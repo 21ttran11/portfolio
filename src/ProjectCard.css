@@ -21,7 +21,7 @@
   display: flex;
   justify-content: left;
   width: 700px;
-  height: auto;
+  height: 394px;
 }
 
 .project-card {
@@ -37,8 +37,6 @@
 }
 
 .project-card img {
-  /*width: 700px;
-  height: auto;*/
   object-fit: cover;
 }
 
