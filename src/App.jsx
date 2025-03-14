@@ -22,7 +22,7 @@ const App = () => {
       description2: '2D single player adventure platformer with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/csharp.svg',
+        './assets/Logos/CSharp.svg',
         './assets/Logos/YarnSpinner.svg'
       ],
       contributions: "Implemented gameplay mechanics, managed team workflow...",
@@ -41,8 +41,8 @@ const App = () => {
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/csharp.svg',
-        './assets/Logos/FMOD.svg'
+        './assets/Logos/CSharp.svg',
+        './assets/Logos/FMOD.svg',
       ],
       contributions: "Created beat syncing system using FMOD and Unity...",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
@@ -63,8 +63,7 @@ const App = () => {
       description2: 'Developed in 12 days as a submission to the Unlikely Collaborators Game Jam with the theme "Perception Box". A point and click puzzle game with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/csharp.svg',
-        './assets/Logos/FMOD.svg'
+        './assets/Logos/FMOD.svg',
       ],
       contributions: "Drew stuff",
       itchlink: 'https://pomjellies.itch.io/wave-rave',
