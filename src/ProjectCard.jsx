@@ -26,9 +26,9 @@ const ProjectCard = ({ role, images, title, video, description, description2, te
           <p>{description2}</p>
         </div>
         <div className="video">
-          <video controls>
-            <source src={video} type="video/mp4" />
-          </video>
+          <iframe width="700" height="394"
+            src={video}>
+          </iframe>
         </div>
       </div>
 

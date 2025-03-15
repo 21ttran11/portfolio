@@ -18,7 +18,7 @@ const App = () => {
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
-      video: "./assets/Zuk/ZukVideo.mp4",
+      video: "https://www.youtube.com/embed/tgbNymZ7vqY",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       description2: 'A 2D single player adventure platformer with heavy story and narrative elements.',
       technologies: [
@@ -38,6 +38,7 @@ const App = () => {
       ],
       id: 'project2',
       title: 'Wave Rave 🫧⋆｡˚🌊',
+      video: "https://www.youtube.com/embed/tgbNymZ7vqY",
       description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles with charming storylines. Currently offers a lobster versus shark face-off.',
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       technologies: [
@@ -60,13 +61,23 @@ const App = () => {
       ],
       id: 'project1',
       title: 'Savor',
+      video: "https://www.youtube.com/embed/mmu_lc1Va5g",
       description: '',
       description2: 'Developed in 12 days as a submission to the Unlikely Collaborators Game Jam with the theme "Perception Box". A point and click puzzle game with heavy story and narrative elements.',
       technologies: [
         './assets/Logos/Unity.svg',
-        './assets/Logos/FMOD.svg',
+        './assets/Logos/csharp.svg',
+        './assets/Logos/YarnSpinner.svg',
       ],
-      contributions: <p><span className = 'blue' style={{ fontWeight: '550' }}>Art & Design:</span> Designed and created game assets including kitchen backgrounds, tool and ingredient sprites, and title-screen.</p>,
+      contributions: (
+        <p>
+          <span className="blue" style={{ fontWeight: '550' }}>Art & Design:</span> 
+           Designed and created game assets including kitchen backgrounds, tool and ingredient sprites, and title-screen. Illustrated memory scenes.
+          <br />
+          <span className="blue" style={{ fontWeight: '550' }}>Writing:</span> 
+           Wrote game progression and narrative. Wrote dialogue for conversations in memory scenes.
+        </p>
+      ),
       itchlink: 'https://macdudedude.itch.io/savor',   
     }
   ]
