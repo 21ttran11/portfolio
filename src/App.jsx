@@ -26,7 +26,16 @@ const App = () => {
         './assets/Logos/csharp.svg',
         './assets/Logos/YarnSpinner.svg'
       ],
-      contributions: <p><span className = 'yellow' style={{ fontWeight: '550' }}>Dialogue Implementation:</span> Implemented YarnSpinner for dyanmic and branching dialogue. Created custom speech bubble views for displaying dialogue and options.</p>,
+      contributions: (
+        <p>
+          <span className="blue" style={{ fontWeight: '550' }}>Dialogue:</span> 
+           Integrated YarnSpinner for dialogue display, dialogue choices, and branching dialogues. Utilized YarnSpinner's commands and variable storage to smoothly immerse gameplay with dialogue. Created custom speech bubble dialogue and option views. 
+          <br />
+          <br />
+          <span className="blue" style={{ fontWeight: '550' }}>Interactables/Scene Action System:</span> 
+           Implemented a versitile interactables system to support a multitude of scene actions. Actions include displaying bulletin boards, enabeling conversations and starting quests or mini-games/activites.
+        </p>
+      ),
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
       gitlink: 'https://github.com/21ttran11/ZuksDelivery'
     },
@@ -46,7 +55,15 @@ const App = () => {
         './assets/Logos/csharp.svg',
         './assets/Logos/FMOD.svg',
       ],
-      contributions: "Created beat syncing system using FMOD and Unity...",
+      contributions: (
+        <p>
+          <span className="blue" style={{ fontWeight: '550' }}>FMOD Integration Into Base Gameplay:</span> 
+           Designed and created game assets including kitchen backgrounds, tool and ingredient sprites, and title-screen. Illustrated memory scenes.
+          <br />
+          <span className="blue" style={{ fontWeight: '550' }}>Animations and Cutscene:</span> 
+           Wrote game progression and narrative. Wrote dialogue for conversations in memory scenes.
+        </p>
+      ),
       itchlink: 'https://pomjellies.itch.io/wave-rave',
       gitlink: 'https://github.com/21ttran11/RhythmGame'
     }
@@ -73,6 +90,7 @@ const App = () => {
         <p>
           <span className="blue" style={{ fontWeight: '550' }}>Art & Design:</span> 
            Designed and created game assets including kitchen backgrounds, tool and ingredient sprites, and title-screen. Illustrated memory scenes.
+          <br />
           <br />
           <span className="blue" style={{ fontWeight: '550' }}>Writing:</span> 
            Wrote game progression and narrative. Wrote dialogue for conversations in memory scenes.
