@@ -18,7 +18,6 @@ const App = () => {
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
-      video: "https://www.youtube.com/embed/tgbNymZ7vqY",
       description: 'This summer, Zuk has picked up a part-time job as a delivery driver in hopes of discovering what more his world has to offer while making bank. But, the job description didn’t mention the twisty roads of…interdimensional travel? Join Zuk, his heelies, and carnivores, as they fight against the vegans!',
       description2: 'A 2D single player adventure platformer with heavy story and narrative elements.',
       technologies: [
@@ -47,7 +46,6 @@ const App = () => {
       ],
       id: 'project2',
       title: 'Wave Rave 🫧⋆｡˚🌊',
-      video: "https://www.youtube.com/embed/tgbNymZ7vqY",
       description: 'Dive deep into the ocean and engage in exciting sea-themed musical battles with charming storylines. Currently offers a lobster versus shark face-off.',
       description2: 'A quirky rhythm game with rhythm-heaven inspired gameplay and humor.',
       technologies: [
