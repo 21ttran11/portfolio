@@ -12,9 +12,9 @@ const App = () => {
     {
       role: "Team Lead & Programmer",
       images: [
-        { src: 'https://i.redd.it/szwqxgz7ps011.gif', caption: 'Dynamic scene actions/interactables'},
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Custom speech bubble dialogue UI'},
-        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'Custom speech bubble dialogue options UI'}
+        { src: './assets/Zuk/SceneAction.gif', caption: 'Dynamic scene actions/interactables'},
+        { src: './assets/Zuk/SpeechBubble.gif', caption: 'Custom speech bubble dialogue UI'},
+        { src: './assets/Zuk/CustomOptionsView.gif', caption: 'Custom speech bubble dialogue options UI'}
       ],
       id: 'project1',
       title: "Zuk's Delivery [SGDA 2024 Mini-Grant Recipient]",
@@ -73,8 +73,8 @@ const App = () => {
     {
       role: "Artist & Writer",
       images: [
-        { src: 'https://img.itch.zone/aW1hZ2UvOTM2NjQvNDM5MDAwLmdpZg==/original/04jE2Q.gif', caption: 'Title screen & animation' },
-        { src: 'https://giffiles.alphacoders.com/372/37270.gif', caption: 'Cooking ramen kitchen scene'}
+        { src: './assets/Savor/Cooking.gif', caption: 'Cooking ramen kitchen sprites' },
+        { src: './assets/Savor/LuggageAssets.gif', caption: 'Searching luggage sprites'}
       ],
       id: 'project1',
       title: 'Savor',
