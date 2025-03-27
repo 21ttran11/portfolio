@@ -33,6 +33,11 @@ const App = () => {
           <br />
           <span className="blue" style={{ fontWeight: '550' }}>Interactables/Scene Action System:</span> 
            Implemented a versitile interactables system to support a multitude of scene actions. Actions include displaying bulletin boards, enabeling conversations and starting quests or mini-games/activites.
+          <br />
+          <br />
+          <span className="blue" style={{ fontWeight: '550' }}>Mouse drag and drop:</span> 
+           Drag and drop. 
+          <br />
         </p>
       ),
       itchlink: 'https://pomjellies.itch.io/zuks-delivery',
